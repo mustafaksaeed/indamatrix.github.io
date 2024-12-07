@@ -10,18 +10,18 @@ body {
     rgba(3, 37, 32, 255),
     rgba(0, 0, 0)
   );
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
 }
-header,
-.buttons {
-  display: flex;
-  margin-top: 40px;
-}
+
 header {
   display: flex;
   justify-content: space-around;
   float: left;
   width: 75%;
+  margin-top: 50px;
 }
+
 nav ul {
   list-style: none;
   display: flex;
@@ -31,6 +31,7 @@ nav ul {
 nav ul a {
   display: flex;
   text-decoration: none;
+  color: white;
 }
 .buttons a {
   text-decoration: none;
@@ -44,4 +45,5 @@ nav ul a {
   flex-direction: row;
   gap: 60px;
   overflow: none;
+  margin-top: 44px;
 }
