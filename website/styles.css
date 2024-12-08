@@ -65,6 +65,7 @@ nav a:hover {
   flex-direction: column;
   justify-content: flex-start;
   margin-top: 0;
+  opacity: 0.75;
 }
 .sidebar a {
   text-decoration: none;
@@ -76,9 +77,20 @@ nav a:hover {
 .x {
   margin-top: 20px;
 }
-
+.menu-button {
+  display: none;
+}
 @media (max-width: 800px) {
   .hideMobile {
     display: none !important;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
   }
 }
