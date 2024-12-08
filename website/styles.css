@@ -14,32 +14,42 @@ body {
   min-height: 100vh;
 }
 nav ul {
+  margin-top: 50px;
+}
+nav h3 {
+  float: left;
+  width: 25%;
+  margin-top: 40px;
+  margin-left: 90px;
+}
+nav ul {
   width: 100%;
   list-style: none;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  float: left;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+nav:first-child ul li {
+  display: flex;
 }
 nav li {
-  height: 50px;
+  height: 60px;
 }
 nav a {
   height: 100%;
   padding: 0 30px;
   text-decoration: none;
   display: flex;
-  align-items: center;
   color: white;
 }
 nav a:hover {
   color: rgba(153, 187, 182, 1);
 }
-nav li:first-child {
-  margin-right: auto;
-}
 
 .sidebar {
-  display: block;
   position: fixed;
   top: 0;
   right: 0;
@@ -51,14 +61,24 @@ nav li:first-child {
     rgba(3, 37, 32, 255),
     rgba(0, 0, 0)
   );
-  display: flex;
+  display: none;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: flex-start;
+  margin-top: 0;
 }
 .sidebar a {
   text-decoration: none;
 }
 .sidebar ul li {
   list-style: none;
+}
+
+.x {
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .hideMobile {
+    display: none !important;
+  }
 }
